@@ -4,4 +4,4 @@ TEDxKamal Pokhari is a platform that brings together visionaries, innovators, an
 
 ## Website for TEDxKamal Pokhari
 
-[tedxpvgcoet.com](https://tedxkamalpokhari.com)
+[tedxkamalpokhari.com](https://tedxkamalpokhari.com)
