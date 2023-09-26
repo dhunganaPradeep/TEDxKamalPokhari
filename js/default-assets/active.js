@@ -122,10 +122,10 @@
             });
             // init Isotope
             var $grid = $('.confer-portfolio').isotope({
-                itemSelector: '.single_gallery_item',
+                itemSelector: '.single-gallery-item',
                 percentPosition: true,
                 masonry: {
-                    columnWidth: '.single_gallery_item'
+                    columnWidth: '.single-gallery-item'
                 }
             });
         });

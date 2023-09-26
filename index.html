@@ -382,7 +382,7 @@
               data-wow-delay="300ms"
             >
               <div class="contact_form">
-                <form action="mail.php" method="post" id="main_contact_form">
+                <form action="form.php" method="post" id="main_contact_form">
                   <div class="contact_input_area">
                     <div id="success_fail_info"></div>
                     <div class="row">
@@ -392,10 +392,10 @@
                           <input
                             type="text"
                             class="form-control mb-30"
-                            name="name"
+                            name="fname"
                             id="name"
                             placeholder="First Name"
-                          />
+                          required/>
                         </div>
                       </div>
                       <!-- Form Group -->
@@ -404,10 +404,10 @@
                           <input
                             type="text"
                             class="form-control mb-30"
-                            name="name"
+                            name="lname"
                             id="name2"
                             placeholder="Last Name"
-                          />
+                            required/>
                         </div>
                       </div>
                       <!-- Form Group -->
@@ -419,19 +419,20 @@
                             name="email"
                             id="email"
                             placeholder="Email"
-                          />
+                            required/>
                         </div>
                       </div>
                       <!-- Form Group -->
                       <div class="col-12 col-lg-6">
                         <div class="form-group">
                           <input
-                            type="text"
+                            type="tel"
                             class="form-control mb-30"
-                            name="subject"
-                            id="subject"
-                            placeholder="Number"
-                          />
+                            name="number"
+                            id="number"
+                            placeholder="Number" 
+                            pattern="[0-9]{3}[0-9]{2}[0-9]{3}"
+                            required/>
                         </div>
                       </div>
                       <!-- Form Group -->
@@ -444,7 +445,7 @@
                             cols="30"
                             rows="6"
                             placeholder="Message *"
-                          ></textarea>
+                            required></textarea>
                         </div>
                       </div>
                       <!-- Button -->
@@ -561,32 +562,32 @@
                   <div class="row">
                     <div class="col-4">
                       <a href="img/bg-img/21.jpg" class="single-gallery-item"
-                        ><img src="img/bg-img/21.jpg" alt=""
+                        ><img src="img/bg-img/boudha.jpg" alt=""
                       /></a>
                     </div>
                     <div class="col-4">
                       <a href="img/bg-img/boat.jpg" class="single-gallery-item"
-                        ><img src="img/bg-img/22.jpg" alt=""
+                        ><img src="img/bg-img/girl.jpg" alt=""
                       /></a>
                     </div>
                     <div class="col-4">
                       <a href="img/bg-img/23.jpg" class="single-gallery-item"
-                        ><img src="img/bg-img/23.jpg" alt=""
+                        ><img src="img/bg-img/hero.png" alt=""
                       /></a>
                     </div>
                     <div class="col-4">
                       <a href="img/bg-img/24.jpg" class="single-gallery-item"
-                        ><img src="img/bg-img/24.jpg" alt=""
+                        ><img src="img/bg-img/boat.jpg" alt=""
                       /></a>
                     </div>
                     <div class="col-4">
                       <a href="img/bg-img/25.jpg" class="single-gallery-item"
-                        ><img src="img/bg-img/25.jpg" alt=""
+                        ><img src="img/bg-img/ghatta.jpg" alt=""
                       /></a>
                     </div>
                     <div class="col-4">
                       <a href="img/bg-img/26.jpg" class="single-gallery-item"
-                        ><img src="img/bg-img/26.jpg" alt=""
+                        ><img src="img/bg-img/toribari.jpg" alt=""
                       /></a>
                     </div>
                   </div>

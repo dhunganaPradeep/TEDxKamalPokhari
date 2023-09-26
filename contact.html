@@ -128,8 +128,9 @@
                 </p>
               </div>
               <div class="contact_form">
-                <form action="#" method="post">
+                <form action="form.php" method="post" id="main_contact_form">
                   <div class="contact_input_area">
+                    <div id="success_fail_info"></div>
                     <div class="row">
                       <!-- Form Group -->
                       <div class="col-12 col-lg-6">
@@ -137,11 +138,10 @@
                           <input
                             type="text"
                             class="form-control mb-30"
-                            name="name"
+                            name="fname"
                             id="name"
-                            placeholder="Your Name"
-                            required
-                          />
+                            placeholder="First Name"
+                          required/>
                         </div>
                       </div>
                       <!-- Form Group -->
@@ -150,11 +150,10 @@
                           <input
                             type="text"
                             class="form-control mb-30"
-                            name="name"
-                            id="name-2"
+                            name="lname"
+                            id="name2"
                             placeholder="Last Name"
-                            required
-                          />
+                            required/>
                         </div>
                       </div>
                       <!-- Form Group -->
@@ -166,20 +165,20 @@
                             name="email"
                             id="email"
                             placeholder="Email"
-                            required
-                          />
+                            required/>
                         </div>
                       </div>
                       <!-- Form Group -->
                       <div class="col-12 col-lg-6">
                         <div class="form-group">
                           <input
-                            type="text"
+                            type="tel"
                             class="form-control mb-30"
-                            name="subject"
-                            id="subject"
-                            placeholder="Your Number"
-                          />
+                            name="number"
+                            id="number"
+                            placeholder="Number" 
+                            pattern="[0-9]{3}[0-9]{2}[0-9]{3}"
+                            required/>
                         </div>
                       </div>
                       <!-- Form Group -->
@@ -191,9 +190,8 @@
                             id="message"
                             cols="30"
                             rows="6"
-                            placeholder="Message"
-                            required
-                          ></textarea>
+                            placeholder="Message *"
+                            required></textarea>
                         </div>
                       </div>
                       <!-- Button -->

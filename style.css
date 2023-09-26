@@ -1590,7 +1590,7 @@ input:required {
 }
 .main-footer-area .single-footer-widget .footer-gallery a:hover::before {
   visibility: visible;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .copywrite-content {
