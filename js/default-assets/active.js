@@ -1,7 +1,7 @@
 (function ($) {
     'use strict';
 
-    var confer_window = $(window);
+    let confer_window = $(window);
 
     // ****************************
     // :: 1.0 Preloader Active Code
@@ -26,7 +26,7 @@
     // *********************************
 
     if ($.fn.owlCarousel) {
-        var welcomeSlider = $('.welcome-slides');
+        let welcomeSlider = $('.welcome-slides');
         welcomeSlider.owlCarousel({
             items: 1,
             loop: true,
@@ -38,27 +38,27 @@
         })
 
         welcomeSlider.on('translate.owl.carousel', function () {
-            var layer = $("[data-animation]");
+            let layer = $("[data-animation]");
             layer.each(function () {
-                var anim_name = $(this).data('animation');
+                let anim_name = $(this).data('animation');
                 $(this).removeClass('animated ' + anim_name).css('opacity', '0');
             });
         });
 
         $("[data-delay]").each(function () {
-            var anim_del = $(this).data('delay');
+            let anim_del = $(this).data('delay');
             $(this).css('animation-delay', anim_del);
         });
 
         $("[data-duration]").each(function () {
-            var anim_dur = $(this).data('duration');
+            let anim_dur = $(this).data('duration');
             $(this).css('animation-duration', anim_dur);
         });
 
         welcomeSlider.on('translated.owl.carousel', function () {
-            var layer = welcomeSlider.find('.owl-item.active').find("[data-animation]");
+            let layer = welcomeSlider.find('.owl-item.active').find("[data-animation]");
             layer.each(function () {
-                var anim_name = $(this).data('animation');
+                let anim_name = $(this).data('animation');
                 $(this).addClass('animated ' + anim_name).css('opacity', '1');
             });
         });
@@ -79,7 +79,7 @@
     // ************************************
 
     if ($.fn.owlCarousel) {
-        var clientArea = $('.client-area');
+        let clientArea = $('.client-area');
         clientArea.owlCarousel({
             items: 2,
             loop: true,
@@ -115,13 +115,13 @@
         $('.confer-portfolio').imagesLoaded(function () {
             // filter items on button click
             $('.portfolio-menu').on('click', 'button', function () {
-                var filterValue = $(this).attr('data-filter');
+                let filterValue = $(this).attr('data-filter');
                 $grid.isotope({
                     filter: filterValue
                 });
             });
             // init Isotope
-            var $grid = $('.confer-portfolio').isotope({
+            let $grid = $('.confer-portfolio').isotope({
                 itemSelector: '.single-gallery-item',
                 percentPosition: true,
                 masonry: {
@@ -176,16 +176,6 @@
         $('.video-play-btn').magnificPopup({
             type: 'iframe'
         });
-        $('.portfolio-img').magnificPopup({
-            type: 'image',
-            gallery: {
-                enabled: true,
-                preload: [0, 2],
-                navigateByImgClick: true,
-                tPrev: 'Previous',
-                tNext: 'Next'
-            }
-        });
         $('.single-gallery-item').magnificPopup({
             type: 'image',
             gallery: {
@@ -194,8 +184,19 @@
                 navigateByImgClick: true,
                 tPrev: 'Previous',
                 tNext: 'Next'
-            }
+            },
+            fixedContentPos: false
         });
+        // $('.single-gallery-item').magnificPopup({
+        //     type: 'image',
+        //     gallery: {
+        //         enabled: true,
+        //         preload: [0, 2],
+        //         navigateByImgClick: true,
+        //         tPrev: 'Previous',
+        //         tNext: 'Next'
+        //     }
+        // });
     }
 
     // **************************
@@ -225,7 +226,7 @@
     // :: 13.0 Countdown Active Code
     // ****************************
     if ($.fn.countdown) {
-        $("#clock").countdown("2019/08/29", function (event) {
+        $("#clock").countdown("2023/08/29", function (event) {
             $(this).html(event.strftime("<div>%m <span>Months</span></div> <div>%d <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
         });
     }
@@ -250,7 +251,7 @@
     // *********************************
     // :: 14.0 Prevent Default 'a' Click
     // *********************************
-    var pricingTable = $(".single-ticket-pricing-table");
+    let pricingTable = $(".single-ticket-pricing-table");
 
     pricingTable.on("mouseenter", function () {
         pricingTable.removeClass("active");
