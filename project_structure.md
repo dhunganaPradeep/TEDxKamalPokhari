@@ -16,12 +16,11 @@ TEDxKamalPokhari/
     │   ├── owl.carousel.min.css
     │   ├── style.css
     ├── fonts/
-    ├── events/
-    |   ├──2020.html
-    |   ├──2021.html
     ├── img/
     │   ├── bg-img/
     │   ├── core-img/
+    │   ├── speakers/
+    │   ├── sponsers/
     ├── js/
     │   ├── default-assets/
     │   ├── bootstrap.min.js
@@ -64,6 +63,9 @@ TEDxKamalPokhari/
     │   ├── ticket.scss
     │   ├── widget.scss
     │   ├── style.scss
+    ├── team/
+    │   ├── img/
+    │   ├── index.html
     ├── about.html
     ├── blog.html
     ├── contact.html
