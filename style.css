@@ -131,10 +131,7 @@ ul li {
   top: 0;
   left: 0;
   z-index: -1;
-  background: #c63fa4;
-  background-image: -moz-linear-gradient(120deg, #eb0028 0%, #eb0028 100%);
-  background-image: -webkit-linear-gradient(120deg, #eb0028 0%, #eb0028 100%);
-  background-image: -ms-linear-gradient(120deg, #eb0028 0%, #eb0028 100%);
+  background: rgb(235, 0, 40, 0.8);
   opacity: 0.9;
 }
 
