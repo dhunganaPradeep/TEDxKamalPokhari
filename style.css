@@ -1967,18 +1967,22 @@ input:required {
   overflow: hidden;
   margin-bottom: 40px;
   border-radius: 10px;
+  height: 400px;
 }
 .single-speaker-area .speaker-single-thumb {
   position: relative;
   z-index: 1;
   border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
 }
 .single-speaker-area .speaker-single-thumb img {
   -webkit-transition-duration: 1500ms;
   -o-transition-duration: 1500ms;
   transition-duration: 1500ms;
   border-radius: 10px;
-  width: 100%;
+  width: auto;
+  height: auto;
 }
 .single-speaker-area .social-info {
   position: absolute;
