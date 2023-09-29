@@ -64,31 +64,6 @@
         });
     }
 
-    // *********************************
-    // :: 4.0 Sponsors load more
-    // *************************
-    
-        $(document).ready(function() {
-  // Define the number of sponsors to show initially and how many to load on each "Load More" click.
-        let sponsorsToShow = 4;
-        let sponsorsToLoad = 4;
-
-        // Hide all sponsor items initially except the first 'sponsorsToShow' items.
-        $('#sponsor-section .single-blog-area').slice(sponsorsToShow).hide();
-
-        // Handle the "Load More" button click event.
-        $('.confer-btn').on('click', function(e) {
-            e.preventDefault();
-
-        // Select hidden sponsor items and show 'sponsorsToLoad' of them.
-        $('#sponsor-section .single-blog-area:hidden').slice(0, sponsorsToLoad).slideDown();
-
-        // Check if all sponsor items are visible, hide the "Load More" button.
-        if ($('#sponsor-section .single-blog-area:hidden').length === 0) {
-            $('.confer-btn').fadeOut('slow');
-    }
-  });
-});
 
 
 

@@ -1967,22 +1967,23 @@ input:required {
   overflow: hidden;
   margin-bottom: 40px;
   border-radius: 10px;
-  height: 400px;
+  /* width:350px;
+  height: 350px; */
 }
 .single-speaker-area .speaker-single-thumb {
   position: relative;
   z-index: 1;
   border-radius: 10px;
-  height: 100%;
-  overflow: hidden;
+  /* height: 100%;
+  overflow: hidden; */
 }
 .single-speaker-area .speaker-single-thumb img {
   -webkit-transition-duration: 1500ms;
   -o-transition-duration: 1500ms;
   transition-duration: 1500ms;
   border-radius: 10px;
-  width: auto;
-  height: auto;
+  width: 100%;
+  /* height: auto; */
 }
 .single-speaker-area .social-info {
   position: absolute;
